@@ -20,3 +20,15 @@ mvn clean install
 </dependency>
 ```
 
+## How to check whether the Embedded Cassandra is Running or not
+Run the following command for TCP Port Listen
+
+```
+lsof -nP -iTCP:9142 -sTCP:LISTEN
+```
+
+Check the Logg files at
+
+```
+tail -f <target>/cassandra/*.log
+```
