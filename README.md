@@ -16,9 +16,12 @@ mvn clean install
     <groupId>com.merusphere.oss.ut</groupId>
     <artifactId>embedded-cassandra-jdk11</artifactId>
     <version>1.0.0</version>
+    <classifier>all</classifier>
     <scope>test</scope>
 </dependency>
 ```
+Note : classifier all is very important
+
 
 ## How to check whether the Embedded Cassandra is Running or not
 Run the following command for TCP Port Listen
