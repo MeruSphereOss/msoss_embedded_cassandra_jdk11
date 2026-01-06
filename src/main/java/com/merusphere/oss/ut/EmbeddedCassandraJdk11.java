@@ -10,10 +10,6 @@ public final class EmbeddedCassandraJdk11 {
 	public static void main(String[] args) throws Exception {
 		try {
 			LOGGER.error("NOERR Starting UnitCassandraBootstrap");
-			if (args.length <= 0) {
-				LOGGER.error("Invalid arguments Existing UnitCassandraBootstrap");
-				System.exit(1);
-			}
 
 			Long timeout = 60000L;
 			for (String arg : args) {
